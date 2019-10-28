@@ -13,9 +13,12 @@
                 <input id="myInput" type="text" name="myCountry" placeholder="Country">
                 <script>
                     autocomplete(document.getElementById("myInput"), countries);
+                    function msg(){
+                        alert(document.getElementById("myInput").value);
+                    }
                 </script>    
                 </div>
-                <input type="submit" value="Send" onclick="alert(document.form1.myCountry.value)">
+                <input type="submit" value="Send" onclick="msg()">
             </form>
             <div id="footer">
                 <div onclick="window.open('https://github.com/raresmihalache/autocomplete-search')" id="footer-git-icon">
