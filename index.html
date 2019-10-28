@@ -6,16 +6,16 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <div id-="main">
+        <div id="main">
             <!--Make sure the form has the autocomplete function switched off:-->
-            <form autocomplete="off" action="page.php" method="post">
+            <form autocomplete="off" name="form1">
                 <div class="autocomplete" style="width:300px;">
                 <input id="myInput" type="text" name="myCountry" placeholder="Country">
                 <script>
                     autocomplete(document.getElementById("myInput"), countries);
                 </script>    
                 </div>
-                <input type="submit" value="Send">
+                <input type="submit" value="Send" onclick="alert(document.form1.myCountry.value)">
             </form>
             <div id="footer">
                 <div onclick="window.open('https://github.com/raresmihalache/autocomplete-search')" id="footer-git-icon">
