@@ -5,7 +5,7 @@
     </head>
     <body>
         <?php
-        $mycountry = $_GET['myCountry'];
+        $mycountry = $_POST['myCountry'];
         echo $mycountry;
         ?>
         <div id="footer">
